@@ -22,10 +22,13 @@ public class BankAccountProject {
         System.out.println(MrHiggins);
         System.out.println(MrsHiggins);
         
+       
+        
     }
     
     public static String bankAccounts (String name, int accountNumber, double accountBalance){
        BankAccountClass accountHolder = new BankAccountClass (name, accountNumber, accountBalance);
+       accountHolder.setWithdraw(1000);
        return accountHolder.toString();
         
     }
@@ -35,5 +38,7 @@ public class BankAccountProject {
        return accountHolder.toString();
         
     }
+    
+    
     
 }
